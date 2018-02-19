@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="Imaging">#167AF4</color>
+    <color name="Options">#F7CBB0</color>
+    <color name="Tutorials">#E6A69D</color>
+    <color name="AboutApp">#D9D9D9</color>
+    <color name="QRScanning">#FFFFFF</color>
+    <color name="MenuBackground">#C9F1FB</color>
 </resources>
