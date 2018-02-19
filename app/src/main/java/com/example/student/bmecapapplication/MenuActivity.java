@@ -8,16 +8,18 @@ import android.widget.Button;
 
 public class MenuActivity extends AppCompatActivity implements View.OnClickListener{
 
-    Button imaging = (Button) findViewById(R.id.ImagingButton);
-    Button options =   (Button) findViewById(R.id.OptionsButton);
-    Button tutorials = (Button) findViewById(R.id.TutorialsButton);
-    Button about = (Button) findViewById(R.id.OptionsButton);
-    Button QR = (Button) findViewById(R.id.QRButton);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
+        setContentView(R.layout.content_menu);
+
+        Button imaging = (Button) findViewById(R.id.ImagingButton);
+        Button options =   (Button) findViewById(R.id.OptionsButton);
+        Button tutorials = (Button) findViewById(R.id.TutorialsButton);
+        Button about = (Button) findViewById(R.id.AboutButton);
+        Button QR = (Button) findViewById(R.id.QRButton);
+
         imaging.setOnClickListener(this);
         options.setOnClickListener(this);
         tutorials.setOnClickListener(this);

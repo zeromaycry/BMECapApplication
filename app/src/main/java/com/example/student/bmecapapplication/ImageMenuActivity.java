@@ -11,14 +11,17 @@ import android.widget.Button;
 
 public class ImageMenuActivity extends AppCompatActivity implements View.OnClickListener{
 
-    Button heatmapGen = (Button) findViewById(R.id.HeatmapGenButton);
-    Button prevImages = (Button) findViewById(R.id.PrevImageButton);
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_image_menu);
+        setContentView(R.layout.content_image_menu);
+
+
+        Button heatmapGen = (Button) findViewById(R.id.HeatmapGenButton);
+        Button prevImages = (Button) findViewById(R.id.PrevImageButton);
+
+
         heatmapGen.setOnClickListener(this);
         prevImages.setOnClickListener(this);
 
