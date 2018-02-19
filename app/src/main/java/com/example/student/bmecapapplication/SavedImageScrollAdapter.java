@@ -10,6 +10,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 /**
  * Created by Charles Pritchett on 2/19/2018.
+ * Huge thanks to Journal Dev: https://www.journaldev.com/10024/android-recyclerview-android-cardview-example-tutorial
  */
 
 public class SavedImageScrollAdapter extends RecyclerView.Adapter<SavedImageScrollAdapter.MyViewHolder> {
@@ -30,19 +31,33 @@ public class SavedImageScrollAdapter extends RecyclerView.Adapter<SavedImageScro
         }
     }
 
+    public SavedImageScrollAdapter(ArrayList<Photo> photolist){this.dataSet = photolist;}
+
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return null;
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.content_saved_scroll, parent, false);
+        view.setOnClickListener(SavedScrollActivity.myOnClickListener);
+
+        MyViewHolder myViewHolder = new MyViewHolder(view);
+
+        return myViewHolder;
     }
 
     @Override
-    public void onBindViewHolder(MyViewHolder holder, int position) {
+    public void onBindViewHolder(final MyViewHolder holder, final int position) {
+        TextView imageName = holder.imageName;
+        TextView imageVersion = holder.imageVersion;
+        ImageView imgView = holder.imageViewIcon;
+
+        imageName.setText(dataSet.get(position).getName());
+        imageVersion.setText(dataSet.get(position).getVersion());
+        imgView.setImageResource(dataSet.get(position).getImage());
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return dataSet.size();
     }
 
 
