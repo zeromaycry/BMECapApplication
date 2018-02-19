@@ -43,21 +43,22 @@ public class SavedScrollActivity extends AppCompatActivity{
 
         data = new ArrayList<Photo>();
 
-        /*
+
             //use this once we finish setting up the MyData class
 
-                data = new ArrayList<DataModel>();
+
         for (int i = 0; i < MyData.nameArray.length; i++) {
-            data.add(new DataModel(
+            data.add(new Photo(
                     MyData.nameArray[i],
                     MyData.versionArray[i],
-                    MyData.id_[i],
-                    MyData.drawableArray[i]
+                    MyData.id[i],
+                    MyData.drawables[i]
             ));
         }
 
-         */
+         //for removing
         removedItems = new ArrayList<Integer>();
+
         adapter = new SavedImageScrollAdapter(data);
         recyclerView.setAdapter(adapter);
 

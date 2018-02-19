@@ -5,10 +5,10 @@ package com.example.student.bmecapapplication;
  */
 
 public class MyData {
-    static String[] nameArray = {};
-    static String[] versionArray = {};
+    static String[] nameArray = {"rotunda", "virginiaball", "xray"};
+    static String[] versionArray = {"1", "1", "1"};
 
-    static Integer[] drawables = {};
+    static Integer[] drawables = {R.drawable.rotunda, R.drawable.virginiaball, R.drawable.xray};
 
-    static Integer[] id = {};
+    static Integer[] id = {0, 1, 2};
 }
