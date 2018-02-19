@@ -7,19 +7,19 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/QRButton"
         android:layout_width="456dp"
         android:layout_height="80dp"
         android:layout_marginStart="80dp"
         android:layout_marginTop="32dp"
+        android:background="@color/QRScanning"
         android:text="QR Scanning"
         android:textColor="#000"
-        android:background="@color/QRScanning"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/AboutButton" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/AboutButton"
         android:layout_width="456dp"
         android:layout_height="80dp"
         android:layout_marginStart="80dp"
@@ -28,10 +28,10 @@
         android:textColor="#000"
         android:background="@color/AboutApp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/TutorialsButton" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/TutorialsButton"
         android:layout_width="456dp"
         android:layout_height="80dp"
         android:layout_marginStart="80dp"
@@ -40,10 +40,10 @@
         android:background="@color/Tutorials"
         android:textColor="#000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/OptionsButton" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/OptionsButton"
         android:layout_width="456dp"
         android:layout_height="80dp"
         android:layout_marginStart="80dp"
@@ -52,7 +52,7 @@
         android:background="@color/Options"
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/ImagingButton" />
 
     <TextView
         android:id="@+id/textView3"
@@ -68,7 +68,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/ImagingButton"
         android:layout_width="456dp"
         android:layout_height="80dp"
         android:background="@color/Imaging"

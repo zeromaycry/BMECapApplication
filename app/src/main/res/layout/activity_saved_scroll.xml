@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:layout="http://schemas.android.com/tools">
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
 
-    <include layout="@layout/content_saved_scroll"/>
-</LinearLayout>
+    tools:context=".SavedScrollActivity"
+    android:background="@color/AboutApp"
+    >
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/saved_pictures_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+</RelativeLayout>
