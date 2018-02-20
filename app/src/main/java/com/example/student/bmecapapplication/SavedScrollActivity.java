@@ -5,11 +5,13 @@ package com.example.student.bmecapapplication;
  */
 
 import android.content.Context;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,7 +20,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class SavedScrollActivity extends AppCompatActivity{
+public class SavedScrollActivity extends AppCompatActivity implements View.OnClickListener{
 
     private static RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManger;
@@ -36,6 +38,8 @@ public class SavedScrollActivity extends AppCompatActivity{
 
         recyclerView = (RecyclerView) findViewById(R.id.saved_pictures_scroll);
         recyclerView.setHasFixedSize(true);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
 
         layoutManger = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManger);
@@ -63,6 +67,12 @@ public class SavedScrollActivity extends AppCompatActivity{
         recyclerView.setAdapter(adapter);
 
     }
+
+    @Override
+    public void onClick(View view) {
+
+    }
+
 
 
     private static class MyOnClickListener implements View.OnClickListener{

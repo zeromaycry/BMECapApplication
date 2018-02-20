@@ -31,6 +31,7 @@ public class SavedImageScrollAdapter extends RecyclerView.Adapter<SavedImageScro
         }
     }
 
+
     public SavedImageScrollAdapter(ArrayList<Photo> photolist){this.dataSet = photolist;}
 
     @Override

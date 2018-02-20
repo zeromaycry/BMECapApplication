@@ -19,21 +19,18 @@
         <activity android:name=".MenuActivity"
             android:theme="@style/Theme.AppCompat">
         </activity>
+
         <activity android:name=".ImageMenuActivity"
             android:theme="@style/Theme.AppCompat"
             android:label="@string/app_name"
             android:parentActivityName=".MenuActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.student.bmecapapplication.MenuActivity"/>
         </activity>
+
         <activity android:name=".SavedScrollActivity"
-            android:label="ImageScrolling"
             android:theme="@style/Theme.AppCompat"
+            android:label="ImageScrolling"
             android:parentActivityName=".ImageMenuActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.student.bmecapapplication.ImageMenuActivity"/>
+
         </activity>
 
     </application>

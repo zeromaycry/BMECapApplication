@@ -21,6 +21,8 @@ public class ImageMenuActivity extends AppCompatActivity implements View.OnClick
         Button heatmapGen = (Button) findViewById(R.id.HeatmapGenButton);
         Button prevImages = (Button) findViewById(R.id.PrevImageButton);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+
 
         heatmapGen.setOnClickListener(this);
         prevImages.setOnClickListener(this);
