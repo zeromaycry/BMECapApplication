@@ -35,6 +35,17 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                 //go to "Imaging" option menu (to gen or look at heatmaps)
                 Intent image = new Intent(this, ImageMenuActivity.class);
                 startActivity(image);
+                break;
+
+            case R.id.OptionsButton:
+                //go to "Options" option menu (Image editor?
+                break;
+
+            case R.id.TutorialsButton:
+                //go to "Tutorials" option menu, relevant videos, how to use app?
+                Intent tutorials = new Intent(this,  TutorialMenuActivity.class);
+                startActivity(tutorials);
+                break;
         }
     }
 }
