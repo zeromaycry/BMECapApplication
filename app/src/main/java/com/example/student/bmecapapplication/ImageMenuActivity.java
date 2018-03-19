@@ -32,11 +32,18 @@ public class ImageMenuActivity extends AppCompatActivity implements View.OnClick
 
     @Override
     public void onClick(View view) {
-        switch(view.getId()){
+        switch(view.getId()) {
             case R.id.PrevImageButton:
                 //Go to saved images stored in R.Cycler view
                 Intent image = new Intent(this, SavedScrollActivity.class);
                 startActivity(image);
+                break;
+
+            case R.id.HeatmapGenButton:
+                //go take a new picture
+                Intent takeimage = new Intent(this, ImageCaptureActivity.class);
+                startActivity(takeimage);
+                break;
         }
     }
 }
